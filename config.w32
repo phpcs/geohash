@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("cb_geohash", "for cb_geohash support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("cb_geohash", "enable cb_geohash support", "no");
+
+if (PHP_CB_GEOHASH != "no") {
+	EXTENSION("cb_geohash", "cb_geohash.c", PHP_EXTNAME_SHARED, "/DZEND_ENABLE_STATIC_TSRMLS_CACHE=1");
+}
+
