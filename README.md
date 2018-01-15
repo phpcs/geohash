@@ -4,8 +4,8 @@
 ## 安装此扩展步骤：
 1. git clone
 2. phpize
-3. ./configure --with-php-config=/usr/bin/php-config  此path换成你环境实际路径
-4.　sudo make && sudo make install
+3. ./configure --with-php-config=/usr/bin/php-config　  此path换成你环境实际路径
+4. sudo make && sudo make install
 ----------------------------------------
 
 ## 方法：
