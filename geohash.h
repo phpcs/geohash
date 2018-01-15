@@ -1,6 +1,6 @@
 #include "./geohash_h.h"
 
-#ifndef GEOHASH_H;
+#ifndef GEOHASH_H
 #define GEOHASH_H
 char *base32_encode(char *str)
 {
