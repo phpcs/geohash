@@ -15,7 +15,7 @@ char *base32_encode(char *str)
             j++;
         }
     }
-    free(str);
+    efree(str);
     return base32_str;
 }
 
@@ -50,7 +50,7 @@ char *lon_lat_to_binary(double lon, double lat, int precision)
 
     }
 
-    char *base32_bits = (char*)malloc(sizeof(char)*arr_length);
+    char *base32_bits = (char*)emalloc(sizeof(char)*arr_length);
     for(int j=0;j<arr_length; j++) {
         if((j+1)%2==1) {
             base32_bits[j] = lon_bits[(j+1)/2];
